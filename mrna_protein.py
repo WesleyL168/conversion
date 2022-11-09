@@ -1,4 +1,6 @@
-codon = {
+mrna = input("Provide mRNA strand: ")
+
+codons = {
     "UUU": "F", "UUC": "F", "UUA": "L", "UUG": "L", "CUU": "L", "CUC": "L", "CUA": "L", "CUG": "L", "AUU": "I",
     "AUC": "I", "AUA": "I", "AUG": "M", "GUU": "V", "GUC": "V", "GUA": "V", "GUG": "V", "UCU": "S", "UCC": "S",
     "UCA": "S", "UCG": "S", "CCU": "P", "CCC": "P", "CCA": "P", "CCG": "P", "ACU": "T", "ACC": "T", "ACA": "T",
@@ -8,3 +10,13 @@ codon = {
     "CGA": "R", "CGG": "R", "AGU": "S", "AGC": "S", "AGA": "R", "AGG": "R", "GGU": "G", "GGC": "G", "GGA": "G",
     "GGG": "G"
 }
+def translate(mrna):
+    protein = ""
+    if len(mrna)%3 == 0:
+        for i in range(0, len(mrna), 3):
+            codon = mrna[i:i+3]
+            protein += codons[codon]
+    return protein
+
+print(translate(mrna))
+
