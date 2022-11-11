@@ -14,3 +14,4 @@ def transcription(dna):
     return mrna
 print(transcription(dna))
 
+
