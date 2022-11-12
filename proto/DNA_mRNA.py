@@ -13,5 +13,3 @@ def transcription(dna):
             mrna += "G"
     return mrna
 print(transcription(dna))
-
-

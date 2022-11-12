@@ -1,3 +1,5 @@
+## Converts DNA template to reverse complement
+
 dna = input("Please provide template: ")
 dna = dna.upper()
 

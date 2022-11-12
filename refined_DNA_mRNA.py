@@ -1,3 +1,5 @@
+## Converts DNA to mRNA
+
 dna = input("Provide DNA template:")
 dna = dna.upper()
 

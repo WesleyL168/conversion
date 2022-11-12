@@ -10,5 +10,3 @@ def reverse_complement(dna):
   return complement
 
 print(reverse_complement(dna))
-
-    
