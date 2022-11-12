@@ -1,3 +1,5 @@
+## Converts DNA template to reverse complement in 5' to 3'
+
 dna = input("Provide template strand:")
 dna = dna.upper()
 dna = dna[::-1]
